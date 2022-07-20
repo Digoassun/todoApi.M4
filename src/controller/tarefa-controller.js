@@ -1,9 +1,12 @@
 const tarefaController = (app) => {
     app.get('/tarefa', (req, res) => {
-        res.send('a fazer')
+        res.json({
+            "msg": "Rota GET para o tarefa"
+        })
     })
     app.post('/tarefa', (req, res) => {
-        res.send('Rota POST de tarefa ativada: tarefa adicionado ao bda')
+        const body = req.body
+        res.json(body)
     })
 }
 
