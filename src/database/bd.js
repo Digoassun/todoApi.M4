@@ -1,4 +1,4 @@
 export default {
-    usuario:[],
-    tarefa:[]
+    usuario: [],
+    tarefa: []
 }
